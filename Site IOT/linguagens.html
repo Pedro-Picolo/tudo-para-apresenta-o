@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="LGG.css">
+    <link href="estilo_menu.css" rel="stylesheet">
+    <title>Linguagens</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Century+Gothic:wght@400;700&display=swap');
+        body {
+            font-family: 'Century Gothic', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            display: flex;
+            gap: 20px;
+            align-items: flex-start;
+            justify-content: flex-start;
+            margin: 100px 20px 20px;
+        }
+
+        .conteudo {
+            flex: 1;
+            max-width: 40%;
+        }
+
+        .panel {
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            background-color: #f9f9f9;
+        }
+
+        .carrossel {
+            flex: 1;
+            max-width: 60%;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .slides {
+            display: flex;
+            transition: transform 1s ease-in-out;
+        }
+
+        .slide {
+            min-width: 100%;
+            height: 400px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .slide img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .legenda {
+            position: absolute;
+            bottom: 20px;
+            left: 20px;
+            color: white;
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 10px;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .carrossel, .conteudo {
+                max-width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+           <ul> 
+           <li> <a href="menu principal.html">Início</a> </li>
+           <li> <a href="siteIOT.html">Biografia</a> </li>
+           <li> <a href="https://www.linkedin.com">LinkedIn</a></li>
+           <li> <a href="siterealdeIOT.html">Ciência da Natureza</a></li>
+           <li> <a href="humanas.html">Ciência Humana</a></li>
+           <li> <a href="linguagens.html">Linguagens</a></li>    
+        <li>
+            <a href="IOT.html">IOT
+            <span class="material-icons arrow"></span>
+        </a>
+        <div class="dropdown">
+            <a href="./seasons/ratings.html">Atividade do boné<p></a>
+            <a href="./seasons/ratings.html">Atividade do carrinho<p></a>
+            <a href="./seasons/ratings.html">Dispenser de ração<p></p></a>
+            <a href="./seasons/ratings.html">Vídeo da turma<p></p></a>
+        </div>
+    </li> 
+    <li> <a href="iot.html">Matemática</a> </li></ul>
+    </nav>
+  </header>
+  <h4>A</h4>
+  <p></p>
+  <h5>a</h5>
+<h1> Linguagens:</h1>
+<h5> Minha atividade favorita de linguagens foi o maracatu que foi uma apresentação que fizemos no auditório que teve o comparecimento de entorno de 400 pessoas e eu em específico fui um dos caboclos de lança que dançaram, essa atividade nos rendeu diversas dores de cabeças com a confecção do manto, porém também nos rendeu ótimas memórias inesquecíveis, me senti superfeliz depois da apresentação e com o repertório positivo que recebemos de todas as pessoas que assistiram e a nossa visão do espetáculo. Esse com certeza foi o melhor trabalho de LGG durante o ensino médio.</h5>
+<div class="carrossel">
+    <div class="slides">
+    <div class="slide">    
+    <img src="c:\Users\PH\Downloads\Image (1).jpg" alt="Imagem 1"> 
+    <div class="legenda">Cablocos de lança </div>         
+    </div>  
+    <div class="slide">
+    <img src="c:\Users\PH\Downloads\Image (2).jpg" alt="Imagem 2">  
+    <div class="legenda">Roupa</div>      
+    </div> 
+    <div class="slide">      
+    <img src="c:\Users\PH\Downloads\Image (3).jpg" alt="Imagem 3">
+    <div class="legenda">todos os envolvidos na apresentação</div>
+</body>
+</html>

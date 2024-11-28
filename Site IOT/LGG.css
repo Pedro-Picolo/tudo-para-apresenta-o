@@ -1,0 +1,65 @@
+/* Estilos gerais do carrossel */
+.carrossel {
+    width: 100%;
+    max-width: 800px; /* Máxima largura do carrossel */
+    
+    overflow: hidden; /* Esconde as imagens que estão fora da tela */
+    position: relative;
+}
+
+/* Contêiner que agrupa as imagens */
+.slides {
+    display: flex; /* Coloca as imagens lado a lado */
+    transition: transform 1s ease-in-out; /* Transição suave */
+}
+
+/* Cada slide de imagem */
+.slide {
+    min-width: 100%; /* Cada imagem ocupa 100% da largura do contêiner */
+    height: 400px; /* Altura fixa para as imagens */
+    position: relative;
+    overflow: hidden;
+}
+
+/* Estilo da imagem */
+.slide img {
+    width: 100%; /* A imagem ocupa toda a largura do slide */
+    height: 100%;
+    object-fit: cover; /* Faz a imagem cobrir toda a área do slide sem deformar */
+}
+
+/* Estilo da legenda */
+.legenda {
+    position: absolute; /* Posiciona a legenda sobre a imagem */
+    bottom: 20px; /* Distância da legenda do fundo */
+    left: 20px; /* Distância da legenda da lateral esquerda */
+    color: white; /* Cor do texto */
+    background-color: rgba(0, 0, 0, 0.5); /* Fundo semitransparente */
+    padding: 10px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* Animação do carrossel */
+@keyframes rotação {
+    0% {
+        transform: translateX(0);
+    }
+    25% {
+        transform: translateX(-100%);
+    }
+    50% {
+        transform: translateX(-200%);
+    }
+    75% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+/* Ativa a animação do carrossel */
+.carrossel .slides {
+    animation: rotação 25s infinite;
+}
